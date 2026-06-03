@@ -15,7 +15,7 @@ public class DemoApplication {
 	
 	 @GetMapping("/hello")
 	    public String home() {
-		 System.out.println(" Nebu you are a genious  ---");
+		 System.out.println(" Nebu you are a genious -----");
 		 logger.info("Processing started...");
 	        logger.debug("Detailed debug info here");
 	        return "Hello from Java Web App!";
