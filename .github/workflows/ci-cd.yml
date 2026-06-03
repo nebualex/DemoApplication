@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-app:latest
+          tags: nebualex/my-java-app:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -36,5 +36,5 @@ jobs:
     steps:
       - name: Deploy to Docker Desktop (example)
         run: |
-          docker pull your-dockerhub-username/your-app:latest
-          docker run -d -p 8080:8080 your-dockerhub-username/your-app:latest
+          docker pull nebualex/my-java-app:latest
+          docker run -d -p 8080:8080 nebualex/my-java-app:latest
